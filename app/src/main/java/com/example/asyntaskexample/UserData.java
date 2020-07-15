@@ -18,7 +18,7 @@ public class UserData extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_data);
-        recyclerView=(RecyclerView) view.findViewById(R.id.recyclerView);
+        recyclerView=(RecyclerView) findViewById(R.id.recyclerView);
         db=new DataBaseHelper(this);
         try {
             ArrayList<UserInfo> mylist = db.show();
